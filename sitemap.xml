@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Remplacez www.exemple.com par l’adresse réelle du site une fois en ligne -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://www.exemple.com/index.html</loc></url>
+<url><loc>https://www.exemple.com/or.html</loc></url>
+<url><loc>https://www.exemple.com/engins.html</loc></url>
+<url><loc>https://www.exemple.com/apropos.html</loc></url>
+<url><loc>https://www.exemple.com/contact.html</loc></url>
+<url><loc>https://www.exemple.com/credits.html</loc></url>
+</urlset>

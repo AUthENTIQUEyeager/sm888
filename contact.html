@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact et WhatsApp — SM888 Ouagadougou</title>
+<meta name="description" content="Contactez SM888 à Ouagadougou par WhatsApp ou par téléphone : vente et achat d’or, location et vente d’engins et d’équipements miniers.">
+<meta property="og:title" content="Contact et WhatsApp — SM888 Ouagadougou">
+<meta property="og:description" content="Contactez SM888 à Ouagadougou par WhatsApp ou par téléphone : vente et achat d’or, location et vente d’engins et d’équipements miniers.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="assets/img/og.webp">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<main id="main">
+
+<section class="hero hero-s dark"><div class="wrap">
+<h1>Contactez-nous</h1>
+<p class="lead">Le plus rapide : WhatsApp ou téléphone. Nous vous répondons avec une proposition claire.</p>
+<div class="actions">
+<a class="btn btn-wa" data-wa="general"><span data-icon="wa"></span>WhatsApp</a>
+<a class="btn btn-gold" data-tel="1"><span data-icon="phone"></span>Appeler : <span data-cfg="PHONE_1"></span></a>
+<a class="btn btn-line" data-tel="2"><span data-icon="phone"></span>Appeler : <span data-cfg="PHONE_2"></span></a>
+</div>
+</div></section>
+
+<section class="sec" aria-labelledby="t-frm"><div class="wrap"><div class="grid g2">
+<div>
+<h2 id="t-frm">Envoyer une demande</h2>
+<p class="mut">Remplissez le formulaire : WhatsApp s’ouvre avec votre message prêt à envoyer.</p>
+<form id="form-contact" novalidate>
+<label>Nom<input name="nom" autocomplete="name" required></label>
+<label>Téléphone<input name="tel" type="tel" inputmode="tel" autocomplete="tel" required></label>
+<label>Type de demande<select name="type" required>
+<option value="">Choisir…</option><option>Vendre de l’or</option><option>Acheter de l’or</option><option>Louer un engin</option><option>Acheter un engin ou un équipement</option><option>Autre</option></select></label>
+<label>Message<textarea name="message" rows="5" required></textarea></label>
+<button class="btn btn-gold" type="submit">Envoyer sur WhatsApp</button>
+<p id="retour" role="status" aria-live="polite"></p>
+</form>
+</div>
+<div>
+<h2>Nous trouver</h2>
+<address><p><strong data-cfg="NOM_ENTREPRISE"></strong></p><p data-cfg="ADRESSE"></p>
+<p><a href="#" data-tel="1"><span data-cfg="PHONE_1"></span></a><br><a href="#" data-tel="2"><span data-cfg="PHONE_2"></span></a></p>
+<!-- Carte : simple lien vers Google Maps (pas d’iframe lourd). Pour cibler l’adresse exacte, remplacez « Ouagadougou » dans le lien. -->
+<a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Ouagadougou" target="_blank" rel="noopener">Voir sur Google Maps</a>
+</div>
+</div></div></section>
+
+</main>
+<script src="js/config.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
