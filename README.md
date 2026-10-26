@@ -39,3 +39,9 @@ Le script `telecharger_images.py` remplace les images provisoires par de vraies 
 4. Ouvrez `engins.html` : les photos sont à leur place. Si l’une ne convient pas, changez ses mots-clés dans `MACHINES` (en haut du script) et relancez pour cette machine seulement.
 
 Les photos viennent de Wikimedia Commons, uniquement sous licence libre. Les auteurs sont crédités automatiquement dans `credits.html` (lien dans le pied de page) : ne retirez pas cette page tant que ces photos sont utilisées. Si une machine n’est pas trouvée, l’image provisoire est conservée. Quand vous aurez vos propres photos, remplacez les fichiers dans `assets/img/` et retirez la phrase « crédits photos » de `engins.html`.
+
+## 8. Nouveautés : céréales, diaporama, couleurs
+- **Page Céréales** (`cereales.html`) : les produits se gèrent dans `js/cereales.js` (même principe que les machines). La liste fournie (mil, sorgho, maïs, riz, fonio) est une **proposition à confirmer**.
+- **Accueil** : le diaporama utilise `hero-accueil-1/2/3.webp`. Les pages Or, Engins et Céréales ont leur image d’en-tête (`hero-or`, `hero-engins`, `hero-cereales`). La page Or a aussi un emplacement `or-image.webp`.
+- **Télécharger toutes les photos d’un coup** : `python3 telecharger_images.py`. Pour un groupe : `python3 telecharger_images.py hero` ; pour une seule : `python3 telecharger_images.py mil`.
+- **Couleurs vives** : modifiez `--vif-or`, `--vif-orange`, `--vif-vert` au début de `css/style.css`.
