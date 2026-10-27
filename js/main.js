@@ -20,7 +20,7 @@
   function wa(m) { return 'https://wa.me/' + C.WHATSAPP_NUMBER + '?text=' + encodeURIComponent(m); } // message encodé
 
   /* En-tête, pied de page, barre mobile et bouton WhatsApp : modifier ici pour changer sur toutes les pages */
-  var pages = [['index.html', 'Accueil'], ['or.html', 'Or'], ['engins.html', 'Engins &amp; équipements'], ['cereales.html', 'Céréales'], ['apropos.html', 'À propos'], ['contact.html', 'Contact']];
+  var pages = [['index.html', 'Accueil'], ['or.html', 'Or'], ['engins.html', 'Engins &amp; équipements'], ['produits-agricoles.html', 'Produits agricoles'], ['noix.html', 'Noix'], ['apropos.html', 'À propos'], ['contact.html', 'Contact']];
   var cur = location.pathname.split('/').pop() || 'index.html';
   var nav = pages.map(function (p) { return '<a href="' + p[0] + '"' + (p[0] === cur ? ' aria-current="page"' : '') + '>' + p[1] + '</a>'; }).join('');
   var head = '<header class="site-h dark"><div class="wrap"><a class="logo" href="index.html" aria-label="SM888 — Accueil"><img src="' + LOGO + '" width="120" height="40" alt="SM888"></a><nav class="nav" id="nav" aria-label="Menu principal">' + nav + '</nav><a class="btn btn-wa h-wa" data-wa="general">' + ico('wa') + 'WhatsApp</a><button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">' + ico('menu') + '</button></div></header>';
@@ -49,7 +49,7 @@
     rv.forEach(function (e) { io.observe(e); });
   } else rv.forEach(function (e) { e.classList.add('in'); });
 
-  /* Fiche produit (engins et céréales) */
+  /* Fiche produit (engins et produits agricoles) */
   function fiche(m, bd, msg) {
     return '<article class="card prod"><img src="assets/img/' + m.image + '" width="800" height="600" loading="lazy" alt="' + m.nom + '"><div class="corps"><div class="badges">' + bd + '</div><h3>' + m.nom + '</h3><p>' + m.description + '</p><p class="mut">Utile pour : ' + m.utilite + '</p><p class="prix">' + m.prix + '</p><div class="actions"><a class="btn btn-gold" href="' + wa(msg) + '" target="_blank" rel="noopener">Demander un devis</a><a class="btn btn-line" href="' + tel(C.PHONE_1) + '">Appeler</a></div></div></article>';
   }
@@ -79,10 +79,16 @@
     rendre();
   }
 
-  /* Céréales (page cereales.html) */
-  var gc = $('#grille-cer');
-  if (gc && window.CEREALES) gc.innerHTML = window.CEREALES.map(function (m) {
-    return fiche(m, '<span class="badge vte">Vente</span>', C.MESSAGES.devis_cereale.replace('{nom}', m.nom));
+  /* Produits agricoles */
+  var ga = $('#grille-agri');
+  if (ga && window.PRODUITS_AGRICOLES) ga.innerHTML = window.PRODUITS_AGRICOLES.map(function (m) {
+    return fiche(m, '<span class="badge vte">Vente</span>', C.MESSAGES.devis_produit.replace('{nom}', m.nom));
+  }).join('');
+
+  /* Noix */
+  var gn = $('#grille-noix');
+  if (gn && window.NOIX) gn.innerHTML = window.NOIX.map(function (m) {
+    return fiche(m, '<span class="badge vte">Vente</span>', C.MESSAGES.devis_produit.replace('{nom}', m.nom));
   }).join('');
 
   /* Diaporama de l’accueil : pause possible, pas de défilement automatique si « réduire les animations » */
@@ -100,7 +106,7 @@
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) stop(); else lire();
   }
 
-  /* Page « Crédits photos » (liste générée par telecharger_images.py dans js/credits.js) */
+  /* Page « Crédits photos » (liste générée par les scripts d’images dans js/credits.js) */
   var cr = $('#credits');
   if (cr) {
     var K = window.CREDITS || {}, ks = Object.keys(K);

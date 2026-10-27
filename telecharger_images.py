@@ -161,7 +161,7 @@ def main():
                 + json.dumps(credits, ensure_ascii=False, indent=1) + ";\n")
     if not reussies:
         print("Aucune image téléchargée : vérifiez la connexion internet (Mac : lancez « Install Certificates.command » du dossier Python).")
-    print("Terminé : %d/%d images. Vérifiez index.html, or.html, engins.html, cereales.html et credits.html." % (reussies, len(noms)))
+    print("Terminé : %d/%d images. Vérifiez index.html, or.html, engins.html et credits.html." % (reussies, len(noms)))
 
 
 if __name__ == "__main__":

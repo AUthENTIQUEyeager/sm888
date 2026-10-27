@@ -89,7 +89,7 @@ html.js .reveal{opacity:0;transform:translateY(8px);transition:opacity .3s,trans
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}html.js .reveal{opacity:1;transform:none}}
 /* Couleurs vives et images d’en-tête */
 :root{--vif-or:#FFC72C;--vif-orange:#FF7A00;--vif-vert:#22B573;--acc:var(--vif-or)}
-body.t-engins{--acc:var(--vif-orange)}body.t-cer{--acc:var(--vif-vert)}
+body.t-engins{--acc:var(--vif-orange)}body.t-agri,body.t-noix{--acc:var(--vif-vert)}
 h2::after{content:"";display:block;width:56px;height:5px;border-radius:3px;background:var(--acc);margin-top:.5rem}.center h2::after{margin-inline:auto}
 .grid>.card:nth-child(3n+2) .ico{background:var(--vif-orange)}.grid>.card:nth-child(3n) .ico{background:var(--vif-vert)}
 .hero h1{color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.5)}.hero .lead{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.5)}

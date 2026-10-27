@@ -40,8 +40,10 @@ Le script `telecharger_images.py` remplace les images provisoires par de vraies 
 
 Les photos viennent de Wikimedia Commons, uniquement sous licence libre. Les auteurs sont crédités automatiquement dans `credits.html` (lien dans le pied de page) : ne retirez pas cette page tant que ces photos sont utilisées. Si une machine n’est pas trouvée, l’image provisoire est conservée. Quand vous aurez vos propres photos, remplacez les fichiers dans `assets/img/` et retirez la phrase « crédits photos » de `engins.html`.
 
-## 8. Nouveautés : céréales, diaporama, couleurs
-- **Page Céréales** (`cereales.html`) : les produits se gèrent dans `js/cereales.js` (même principe que les machines). La liste fournie (mil, sorgho, maïs, riz, fonio) est une **proposition à confirmer**.
-- **Accueil** : le diaporama utilise `hero-accueil-1/2/3.webp`. Les pages Or, Engins et Céréales ont leur image d’en-tête (`hero-or`, `hero-engins`, `hero-cereales`). La page Or a aussi un emplacement `or-image.webp`.
-- **Télécharger toutes les photos d’un coup** : `python3 telecharger_images.py`. Pour un groupe : `python3 telecharger_images.py hero` ; pour une seule : `python3 telecharger_images.py mil`.
+## 8. Produits agricoles, noix, diaporama et couleurs
+- **Produits agricoles** (`produits-agricoles.html`) : le catalogue est dans `js/produits-agricoles.js`. Il comprend céréales, arachide, soja, sésame et anacarde. L’ancienne adresse `cereales.html` redirige vers cette page.
+- **Noix** (`noix.html`) : le catalogue est dans `js/noix.js` (karité, cajou, coco et palmiste).
+- **Photos agricoles et noix** : lancez `python3 telecharger_images_agricoles.py` pour télécharger les images des deux catalogues et leurs en-têtes. Pour une seule image, ajoutez son nom (ex. `python3 telecharger_images_agricoles.py arachide`). Le script demande Pillow (`python3 -m pip install pillow`) et utilise l’adresse de contact configurée dans `telecharger_images.py`. Sur Mac, si Python signale une erreur de certificat SSL, lancez `Install Certificates.command` depuis le dossier Python. Les crédits Wikimedia sont conservés dans `js/credits.js`.
+- **Autres photos** : `python3 telecharger_images.py` télécharge les images du diaporama, de l’or et des engins. Pour un groupe : `python3 telecharger_images.py hero` ; pour une seule : `python3 telecharger_images.py bulldozer`.
+- **Accueil** : le diaporama utilise `hero-accueil-1/2/3.webp`. Les pages Or et Engins ont leur image d’en-tête (`hero-or`, `hero-engins`). Les pages Produits agricoles et Noix utilisent `hero-produits-agricoles` et `hero-noix`. La page Or a aussi un emplacement `or-image.webp`.
 - **Couleurs vives** : modifiez `--vif-or`, `--vif-orange`, `--vif-vert` au début de `css/style.css`.

@@ -15,7 +15,10 @@ window.CONFIG = {
     acheter_or: "Bonjour, je souhaite acheter de l’or. Pouvez-vous me renseigner ?",
     louer: "Bonjour, je souhaite louer un engin. Pouvez-vous me faire une proposition ?",
     acheter_engin: "Bonjour, je souhaite acheter un engin ou un équipement. Pouvez-vous me renseigner ?",
+    acheter_agricole: "Bonjour, je souhaite acheter des produits agricoles. Pouvez-vous me renseigner sur vos disponibilités ?",
     acheter_cereales: "Bonjour, je souhaite acheter des céréales locales. Pouvez-vous me renseigner ?",
+    acheter_noix: "Bonjour, je souhaite acheter des noix. Pouvez-vous me renseigner sur vos disponibilités ?",
+    devis_produit: "Bonjour, je souhaite un devis pour le produit suivant : {nom}. Merci de m’indiquer la disponibilité.",
     devis_cereale: "Bonjour, je souhaite un devis pour des céréales : {nom}. Merci de m’indiquer la disponibilité.",
     investir: "Bonjour, je suis intéressé(e) par une collaboration ou un investissement avec SM888. Comment pouvons-nous échanger ?",
     devis: "Bonjour, je souhaite un devis pour : {nom} ({mode}). Merci."
