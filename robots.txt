@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-# Remplacez www.exemple.com par l’adresse réelle du site une fois en ligne
-Sitemap: https://www.exemple.com/sitemap.xml
+Sitemap: https://sm888.vercel.app/sitemap.xml
