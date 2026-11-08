@@ -1,5 +1,21 @@
-/* Généré par telecharger_images_agricoles.py — ne pas modifier à la main. */
+/* Généré par telecharger_images.py — ne pas modifier à la main. */
 window.CREDITS = {
+ "foreuse": {
+  "titre": "File:Drilling rig and a digger at a construction site in Tuntorp.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Drilling_rig_and_a_digger_at_a_construction_site_in_Tuntorp.jpg/1280px-Drilling_rig_and_a_digger_at_a_construction_site_in_Tuntorp.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Drilling_rig_and_a_digger_at_a_construction_site_in_Tuntorp.jpg",
+  "auteur": "W.carter",
+  "licence": "CC BY 4.0",
+  "label": "Foreuse"
+ },
+ "trommel": {
+  "titre": "File:Cribleur de type trommel sur une plateforme de compostage.JPG",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Cribleur_de_type_trommel_sur_une_plateforme_de_compostage.JPG/1280px-Cribleur_de_type_trommel_sur_une_plateforme_de_compostage.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Cribleur_de_type_trommel_sur_une_plateforme_de_compostage.JPG",
+  "auteur": "Valentin Mansion",
+  "licence": "CC BY-SA 3.0",
+  "label": "Trommel"
+ },
  "hero-produits-agricoles": {
   "titre": "File:2015.11-435-047ap1 sorghum,harvesting,cutting INERA Res.Stat.Farako-Ba(Bobo-Dioulasso Dpt),BF fri06nov2015-0938h.jpg",
   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/2015.11-435-047ap1_sorghum%2Charvesting%2Ccutting_INERA_Res.Stat.Farako-Ba%28Bobo-Dioulasso_Dpt%29%2CBF_fri06nov2015-0938h.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",

@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/cereales.html", "destination": "/produits-agricoles.html", "permanent": true }
+  ]
+}
