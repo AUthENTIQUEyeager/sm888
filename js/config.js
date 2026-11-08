@@ -5,7 +5,8 @@ window.CONFIG = {
   WHATSAPP_NUMBER: "22671510353",
   PHONE_1: "+226 71 51 03 53",
   PHONE_2: "+226 76 87 82 03",
-  ADRESSE: "S/C 01 BP 5808, Ouaga 08, Ouagadougou, Burkina Faso",
+  ADRESSE: "5QG3+52M, Bobo-Dioulasso, Burkina Faso",
+  ADRESSE_POSTALE: "S/C 01 BP 5808, Ouaga 08, Ouagadougou, Burkina Faso",
   EMAIL: "", // laissez vide pour masquer l’e-mail sur tout le site
   DEVISE: "Qualité, confiance, sécurité et performance",
   // Messages pré-remplis (le site les encode automatiquement)
